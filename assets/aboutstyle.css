@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(249, 149, 231);
+    color: #fff;
+}
+   
+/* #nav li {
+    width: 140px;
+    list-style: none;
+    text-align: center;
+    background-color: #333;
+    border: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 2px;
+}
+   
+#nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+} */
+
+p{
+    line-height: 50px;
+}
+
+.line{
+    background-image: linear-gradient(to right top, transparent calc(50% - 0.5px), #ffffff 50%, #ffffff calc(50% + 0.5px), transparent calc(50% + 1px));
+}
+
+.works{
+    /* display: flex; */
+    list-style: none;
+    /* padding: 1%; */
+}
+
+.works li{
+    padding: 20px;
+}
+
