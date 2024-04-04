@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: rgb(249, 149, 231);
+    background: linear-gradient(#f6f995,#f995e7); 
+    /* background-color: rgb(249, 149, 231); */
 }
 
 header{
