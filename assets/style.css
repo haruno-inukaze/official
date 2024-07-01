@@ -12,6 +12,11 @@ body {
     color: #333;
 }
 
+a{
+    text-decoration: none;
+    color: #f2989d;
+}
+
 header {
     background-color: #fff;
     padding: 10px 20px;
@@ -166,10 +171,10 @@ button:hover {
 }
 
 footer {
-    background-color: #F2989D;
+    background-color: #fff;
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #F2989D;
     box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
 }
 
