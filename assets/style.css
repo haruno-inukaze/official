@@ -1,149 +1,234 @@
-*{
-    box-sizing: border-box;
-
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background: linear-gradient(#f6f995,#f995e7); 
-    /* background-color: rgb(249, 149, 231); */
-}
-
-header{
-    color: #ffffff;
+body {
     display: flex;
-}
-
-header img{
-    padding: 20px;
-    width: 150px;
-}
-
-header h1{
-    /* padding: 5px; */
-    text-align: center;
-}
-
-header ul{
-    list-style: none;
-    display: flex;
-    height: 60px;
-    align-items: center;
-}
-
-header nav{
-    margin-left: auto;
-}
-
-header ul li{
-    margin-left: 20px;
-}
-
-/* #nav {
-    list-style: none;
-    display: flex;
-}
-   
-#nav li {
-    width: 140px;
-    text-align: center;
-    background-color: #ffffff;
-    height: 50px;
-    line-height: 50px;
-    margin-right: 2px;
-}
-   
-#nav li a {
-    text-decoration: none;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
     color: #333;
-    font-weight: bold;
-    padding: 20px;
-} */
-
-h1,h2,#titile{
-    color: #fff;
 }
 
-h1 #title{
-    text-align: center;
-}
-
-p{
-    color: #fff;
-}
-
-p a{
-    color: #fff;
-    text-decoration: none;
-}
-
-p b{
-    color: #fff;
-}
-
-#about a{
-    color: #fff;
-    text-decoration: none;
-}
-
-
-
-
-
-form{
-    width: 50%;
-    margin: 10% auto;
-    min-width: 9rem;
-}
-
-input,textarea{
-    float: left;
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
     width: 100%;
-    max-width: 100%;
-    border: none;
-    margin: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
-    background: darken(#f9f9f9,10%);
-    color: darken(#f9f9f9,50%);
+    top: 0;
+    z-index: 1000; /* 必要に応じて調整 */
+    margin-bottom: 40px; /* Headerの下部に余白を追加 */
 }
 
+#about {
+    padding-top: 70px; /* Headerの高さ分の余白を追加 (例: Headerが70pxの場合) */
+}
 
-#submit{
-    background: #84AD47;
+/* テーブル */
+table {
+    width: 100%; /* テーブル幅を100%に設定 */
+    border-collapse: collapse; /* セルのボーダーを重ねる */
+    margin-bottom: 20px; /* 下の余白を追加 */
+}
+
+th, td {
+    padding: 10px; /* セルのパディング設定 */
+    text-align: center; /* テキストの中央揃え設定 */
+    border: 1px solid #ffeb99; /* ボーダーの設定 */
+}
+
+th {
+    background-color: #ffd699; /* ヘッダーの背景色設定 */
+    color: #fff; /* ヘッダーのテキスト色設定 */
+}
+
+tr:nth-child(even) {
+    background-color: #fff9db; /* 偶数行の背景色設定 */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* 奇数行の背景色設定 */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff9a9e;
     color: #fff;
-    width: auto;
-    float: right;
 }
 
-#submit::placeholder{
-    color: darken(#f9f9f9,50%);
+main {
+    flex: 1;
+    padding: 20px;
 }
 
-textarea{
-    height: 10rem;
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.captcha {
-    float:left;
-    input {
-      float: right;
+#gallery {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-container {
+    overflow-x: auto;
+    white-space: nowrap; /* 画像を横並びにするための設定 */
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px; /* 画像間の余白 */
+}
+
+
+h2 {
+    color: #ff9a9e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff9a9e;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6f61;
+}
+
+footer {
+    background-color: #F2989D;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    input[name=question] {
-      width: 4rem;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      text-align: right;
-      padding-right: 0;
+
+    .menu-toggle {
+        display: block;
     }
-    [name=captcha] {
-      width: 5rem;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      padding-left: 0.5rem;
-      &::placeholder {
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
         text-align: center;
-      }
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 15px;
+    }
+    
+    form label, form input, form textarea, form button {
+        font-size: 1em;
     }
 }
-  
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 10px;
+    }
+    
+    form label, form input, form textarea, form button {
+        font-size: 0.9em;
+    }
+}

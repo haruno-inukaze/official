@@ -3,82 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@haruno_inukaze"> 
-    <meta name="twitter:title" content="統合失調症VTuber春野犬風の公式サイト">
-    <meta name="twitter:description" content="IRIAMで毎日配信中。統合失調症の居場所を作りたい。当事者だからこそ共感できる場を設けたい！">
-    <meta name="twitter:image" content="https://harunosoyokaze.github.io/official/assets/img/haruno_inukaze_new_whiteicon.jpeg">
+    <title>春野犬風 公式ホームページ</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="./assets/img/haruno_inukaze_new_whiteicon.jpg">
-    <title>春野犬風公式サイト</title>
+    <script defer src="./assets/script.js"></script>
+    <script defer src="smooth-scroll.js"></script>
 </head>
 <body>
     <header>
-        <img src="./assets/img/haruno_inukaze_new_icon-removebg-preview.png" alt="" width="50">
-        <h1>HARUNO INUKAZE</h1>
-        <!-- <nav id="nav">
+        <div class="logo">
+            <a href="#"><img src="./assets/img/haruno_inukaze_new_icon-removebg-preview.png" alt="春野犬風"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+        <nav id="nav">
             <ul>
-                <li><a href="#">TOP</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#live">LIVE</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#clinical_history">病歴</a></li>
+                <li><a href="#schedule">配信スケジュール</a></li>
+                <li><a href="#gallery">ギャラリー</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
     <main>
-        <h1 id="title">統合失調症の居場所作り</h1>
-        <h2 id="about">
-            <a href="#about">春野犬風とは？</a>
-        </h2>
-        <p>
-            妄想型統合失調症の当事者です。<br>
-            今年の3月に
-            <a href="https://ja.wikipedia.org/wiki/%E7%B2%BE%E7%A5%9E%E9%9A%9C%E5%AE%B3%E8%80%85%E4%BF%9D%E5%81%A5%E7%A6%8F%E7%A5%89%E6%89%8B%E5%B8%B3" target="_blank">
-                <u>精神障害者保健福祉手帳</u>
-            </a>
-            3級を申請中の<b>春野犬風</b>と申します。<br>
-            統合失調症や精神疾患をお持ちの方の<b>居場所作り</b>を目的として<br>
-            <a href="https://www.live.iriam.com/" target="_blank">
-                <u><b>IRIAM</b></u>
-            </a> 
-            というアバター配信アプリにて活動予定です。<br>
-        </p>
-        <button class="about" type="button">
-            <a href="./assets/about.html">詳しくはこちらから</a>
-        </button>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <h2 id="live">IRIAMライバーデビュー</h2>
-        <p>
-            毎朝7:00から30分配信予定です。<br>
-            憂鬱な朝ですがそれを乗り越えられるような<br>
-            <b>居場所作り</b>をできるよう配信準備中です。<br>
-            この活動を応援してくださる方、居場所を必要としているあなたにとって<br>
-            有意義な枠作りをしていこうと思います。<br>
-            下記ボタンより私のIRIAMプロフィールに飛ぶことができます。
-        </p>
-        <button class="live" type="button">
-            <a href="https://web.iriam.app/s/user/APULONrnoA" target="_blank">
-                IRIAMを見る
-            </a>
-        </button>        
-        <h2 id="contact">お問い合わせ</h2>
-        <p>
-            <a href="mailto:haruno.inukaze@gmail.com?subject=春野犬風公式サイトお問い合わせ&amp;body=お名前：%0D%0Aお問い合わせ内容:">haruno.inukaze@gmail.com</a>
-        </p>
-        <!-- <form action="">
-            <input type="text" placeholder="Name" name="name" required>
-            <input type="email" placeholder="Email" name="Email" name="email" required>
-            <textarea placeholder="Message" name="message" required></textarea>
-            <div class="captcha">
-                <input type="text" placeholder="Answer" name="captcha" required>
-                <input type="text" value="2 + 3 =" name="question" required readonly>
+        <section id="about">
+            <h2>プロフィール</h2>
+            <p>
+                こんにちわん！<br>
+                春野犬風ことあだ名をいっぬって言います！<br>
+                いっぬは統合失調症になっちゃったけど、元気いっぱい！<br>
+                フリフリのしっぽでみんなを元気にするいっぬです！<br>
+                同じ病気に罹ってる方や精神病に罹ってしまった方の居場所作りになればと思い<br>
+                IRIAMに来ました！よろしくだわん！
+            </p>
+        </section>
+        <section id="clinical_history">
+            <h2>病歴</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>日にち</th>
+                        <th>入退院歴</th>
+                        <th>病状</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023/2/22 - 2023/3/15</td>
+                        <td>措置入院</td>
+                        <td>統合失調症</td>
+                    </tr>
+                    <tr>
+                        <td>2023/12/14 - 2024/2/21</td>
+                        <td>緊急措置入院</td>
+                        <td>妄想型統合失調症</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="schedule">
+            <h2>配信スケジュール</h2>
+            <p>最新の配信スケジュールはここで確認できます。</p>
+            <a class="twitter-timeline" href="https://twitter.com/haruno_inukaze?ref_src=twsrc%5Etfw">Tweets by haruno_inukaze</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <section id="gallery">
+            <h2>ギャラリー</h2>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="./assets/img/haruno_inukaze_oshikatsu.PNG" width="350" height="auto" alt="Image 1">
+                    <img src="./assets/img/haruno_inukaze_good_morning.PNG" width="350" height="auto" alt="Image 2">
+                    <img src="./assets/img/haruno_inukaze_mentenance.PNG" width="350" height="auto" alt="Image 3">
+                    <img src="./assets/img/haruno_inukaze_good_morning_2.PNG" width="350" height="auto" alt="Image 4">
+                    <!-- 他の画像も追加 -->
+                </div>
             </div>
-            <input id="submit" type="submit" value="Send">
-        </form> -->
-        <button type="button"><a href="#">TOPに戻る</a></button>
+        </section>        
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form action="https://formspree.io/f/xblrjlqq" method="POST">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section>
     </main>
     <footer>
-        &copy; 2024 Created by <a href="https://twitter.com/haruno_inukaze" target="_blank">@haruno_inukaze</a>
+        <p>&copy; 2024 春野犬風. All rights reserved.</p>
     </footer>
 </body>
 </html>
