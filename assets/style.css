@@ -31,6 +31,10 @@ header {
     margin-bottom: 40px; /* Headerの下部に余白を追加 */
 }
 
+.header-title{
+    
+}
+
 #about {
     padding-top: 70px; /* Headerの高さ分の余白を追加 (例: Headerが70pxの場合) */
 }
