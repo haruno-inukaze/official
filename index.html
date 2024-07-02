@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Twitterカードのメタタグ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@haruno_inukaze">
+    <meta name="twitter:title" content="春野犬風公式サイト">
+    <meta name="twitter:description" content="春野犬風の公式ホームページへようこそ！プロフィール、配信スケジュール、ギャラリー、お問い合わせなどをご覧いただけます。">
+    <meta name="twitter:image" content="http://127.0.0.1:5500/assets/img/haruno_inukaze_new_icon-removebg-preview.png">
     <title>春野犬風 公式ホームページ</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="./assets/img/haruno_inukaze_new_whiteicon.jpg">
     <script defer src="./assets/script.js"></script>
-    <script defer src="smooth-scroll.js"></script>
+    <script defer src="./assets/smooth-scroll.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><img src="./assets/img/haruno_inukaze_new_icon-removebg-preview.png" alt="春野犬風"></a>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="header-top">
+            <div class="logo">
+                <a href="#"><img src="./assets/img/haruno_inukaze_new_icon-removebg-preview.png" alt="春野犬風"></a>
+            </div>
         </div>
-        <div class="menu-toggle" id="menu-toggle">
-            &#9776;
-        </div>
+        <div class="header-title"><a href="#">HARUNO INUKAZE</a></div>
         <nav id="nav">
             <ul>
                 <li><a href="#about">プロフィール</a></li>
@@ -79,7 +86,7 @@
                     <!-- 他の画像も追加 -->
                 </div>
             </div>
-        </section>        
+        </section>
         <section id="contact">
             <h2>お問い合わせ / 質問箱</h2>
             <form action="https://formspree.io/f/xblrjlqq" method="POST">
@@ -94,7 +101,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 <u><a href="https://x.com/haruno_inukaze/" target="_blank">春野犬風</a></u>. All rights reserved.</p>
+        <p>&copy; 2024 <u><a href="https://x.com/haruno_inukaze/" target="_blank">HARUNO INUKAZE</a></u>. All rights reserved.</p>
     </footer>
 </body>
 </html>
